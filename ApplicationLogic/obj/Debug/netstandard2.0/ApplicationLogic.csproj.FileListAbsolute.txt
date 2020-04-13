@@ -1,0 +1,17 @@
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\bin\Debug\netstandard2.0\ApplicationLogic.deps.json
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\bin\Debug\netstandard2.0\ApplicationLogic.dll
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\bin\Debug\netstandard2.0\ApplicationLogic.pdb
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.csprojAssemblyReference.cache
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.AssemblyInfoInputs.cache
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.AssemblyInfo.cs
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.dll
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.pdb
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\bin\Debug\netstandard2.0\ApplicationLogic.deps.json
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\bin\Debug\netstandard2.0\ApplicationLogic.dll
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\bin\Debug\netstandard2.0\ApplicationLogic.pdb
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.AssemblyInfo.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.dll
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.pdb

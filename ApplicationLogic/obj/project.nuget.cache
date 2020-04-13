@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zigLeNpOm6XTfV/NqtAy/5V6TOLYxZ0iAPoheFVGK+YNx/mt0CP9gaJW9y7AMPrDcT/cEbDIeZlB2vM2fudyqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cosmin Sirbu\\source\\repos\\PhoneInfo\\ApplicationLogic\\ApplicationLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cosmin Sirbu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Cosmin Sirbu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

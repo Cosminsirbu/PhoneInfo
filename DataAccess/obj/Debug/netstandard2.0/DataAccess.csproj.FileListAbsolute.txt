@@ -1,0 +1,23 @@
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\bin\Debug\netstandard2.0\ApplicationLogic.dll
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\bin\Debug\netstandard2.0\ApplicationLogic.pdb
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+D:\DRIVE\Cursuri\Anul 3\1Semestrul II\PAW\Site\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\bin\Debug\netstandard2.0\ApplicationLogic.dll
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\bin\Debug\netstandard2.0\ApplicationLogic.pdb
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

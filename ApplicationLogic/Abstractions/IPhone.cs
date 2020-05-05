@@ -10,5 +10,6 @@ namespace PhoneInfo.ApplicationLogic.Abstractions
         IEnumerable<Comment> GetComments();
         IEnumerable<Comment> GetComments(User user);
         Phone GetPhoneByPhoneId(Guid phoneId);
+        //Comment AddPhoneComment(string phoneId);
     }
 }

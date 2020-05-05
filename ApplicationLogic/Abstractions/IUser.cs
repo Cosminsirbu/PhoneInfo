@@ -8,6 +8,8 @@ namespace PhoneInfo.ApplicationLogic.Abstractions
     public interface IUser: IRepository<User>
     {
         User GetUserByUserId(Guid userId);
+        //User GetUserInfo(string userId);
+
         IEnumerable<Comment> GetComments();
     }
 }

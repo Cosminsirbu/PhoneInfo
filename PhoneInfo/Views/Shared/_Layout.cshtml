@@ -6,12 +6,17 @@
     <title>@ViewData["Title"] - PhoneInfo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/css/Index.css" />
+    <link rel="stylesheet" href="~/css/boostrap.css" />
+
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PhoneInfo</a>
+                <a class="fa fa-android" style="color:red"></a>
+                <a class="navbar-brand " asp-area="" asp-controller="Home" asp-action="Index">PhoneInfo</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,22 +30,46 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Phones" asp-action="Index">Phones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index">Users</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" style="background-color:white">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - PhoneInfo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted" style="background-color:white">
+        <div class="container py-md-5">
+            <div class="w3ls-fsocial-grid">
+                <h3 class="sub-w3ls-headf editContent">Follow Us</h3>
+                <div class="social-ficons">
+                    <ul>
+                        <li><a href="https://www.facebook.com" class="facebook editContent"><span class="fa fa-facebook" style="outline: none; cursor: inherit;"></span> Facebook</a></li>
+                        <li><a href="https://www.Twitter.com" class="twitter editContent"><span class="fa fa-twitter" style="outline: none; cursor: inherit;"></span> Twitter</a></li>
+                        <li><a href="https://www.Instagram.com" class="google editContent"><span class="fa fa-instagram style="outline: none; cursor: inherit;"></span>Instagram</a></li>
+                    </ul>
+
+                    <div class="move-top text-center mt-lg-4 mt-3">
+                        <a href="#home"><span class="fa fa-angle-double-up" aria-hidden="true" style="outline: none; cursor: inherit;"></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-left:37%">
+            &copy; 2020 PhoneInfo. All rights reserved | Design by Cosmin Sirbu
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -21,9 +21,10 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("PhoneInfo.ApplicationLogic.DataModel.Admin", b =>
                 {
-                    b.Property<Guid>("AdminId")
+                    b.Property<int>("AdminId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -41,12 +42,13 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("PhoneInfo.ApplicationLogic.DataModel.Comment", b =>
                 {
-                    b.Property<Guid>("CommentId")
+                    b.Property<long>("CommentId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<Guid?>("AdminId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int?>("AdminId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
@@ -54,11 +56,11 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("PhoneId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<long?>("PhoneId")
+                        .HasColumnType("bigint");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
 
                     b.HasKey("CommentId");
 
@@ -73,9 +75,10 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("PhoneInfo.ApplicationLogic.DataModel.Phone", b =>
                 {
-                    b.Property<Guid>("PhoneId")
+                    b.Property<long>("PhoneId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -87,12 +90,13 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("PhoneInfo.ApplicationLogic.DataModel.TipUs", b =>
                 {
-                    b.Property<Guid>("TipusId")
+                    b.Property<long>("TipusId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<Guid?>("AdminId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int?>("AdminId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
@@ -112,15 +116,16 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("PhoneInfo.ApplicationLogic.DataModel.User", b =>
                 {
-                    b.Property<Guid>("UserId")
+                    b.Property<long>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("AccessPermission")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("AdminId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int?>("AdminId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");

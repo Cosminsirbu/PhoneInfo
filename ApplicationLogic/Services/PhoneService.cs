@@ -26,5 +26,10 @@ namespace ApplicationLogic.Services
 
             return phone;
         }
+
+        //public Comment AddPhoneComment(string phoneId)
+        //{
+
+        //}
     }
 }

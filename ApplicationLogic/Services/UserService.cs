@@ -29,5 +29,11 @@ namespace ApplicationLogic.Services
 
             return user;
         }
+
+        //public User GetUserInfo(string userId)
+        //{
+        //    Guid userIdGuid = Guid.Empty;
+
+        //}
     }
 }

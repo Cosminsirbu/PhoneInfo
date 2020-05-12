@@ -54,22 +54,110 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    background-image: url("../content/static/background.png");
+    background: url("../content/static/background.jpeg");
 }
 .footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  margin-top:18%;
+  /*line-height: 60px;*/ /* Vertically center the text there */
 }
 
 
-/*style="background-image:url(../content/static/background.png)"*/
+
+
+/* Footer */
+
+.w3ls-fsocial {
+    /*padding: 2em 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;*/
+    margin: 3px 0 0 0;
+    text-align: center;
+}
+
+h3.sub-w3ls-headf {
+    color: #3a3a3a;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: .7em;
+    line-height: 30px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.29);
+}
+
+.social-ficons ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-ficons ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.social-ficons ul li a {
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+}
+
+.social-ficons ul li a {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    background: transparent;
+    color: #3b5998;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    /*-ms-transition: 0.5s all;*/
+}
+
+.social-ficons ul li a span {
+    margin: 0 0.5em;
+}
+
+.social-ficons ul li a.facebook {
+    color: #3b5998;
+}
+
+.social-ficons ul li a.twitter {
+    color: #1da1f2;
+}
+
+.social-ficons ul li a.google {
+    color: #ea4335;
+}
+/* //Footer */
+
+
+/* Tip Us */
+
+.tipusposition {
+
+    margin-bottom:110px;
+}
+/* //Tip Us */
+
+
+/* Navbar */
+
+.search-form {
+    width: 30%;
+}
+
+form.newsletter {
+    background: #fff;
+    padding: 0.3em;
+    display: flex;
+}
+/* //Navbar */

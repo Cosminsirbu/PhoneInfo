@@ -13,9 +13,19 @@ namespace DataAccess
         {
         }
 
-        public void AddTipUs(string tipUsEmail, string tipUsContent)
+
+        public void AddTipUs(Guid tipUsId, string tipUsEmail, string tipUsContent, DateTime date)
         {
-            throw new NotImplementedException();
+            TipUs tipUs = new TipUs()
+            {
+                TipusId = tipUsId,
+                Email = tipUsEmail,
+                Content = tipUsContent,
+                Date = date
+            };
+
+            Add(tipUs);
         }
     }
+    
 }

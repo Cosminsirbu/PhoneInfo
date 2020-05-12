@@ -14,3 +14,4 @@ C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstand
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.AssemblyInfo.cs
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.dll
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.pdb
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\ApplicationLogic\obj\Debug\netstandard2.0\ApplicationLogic.csprojAssemblyReference.cache

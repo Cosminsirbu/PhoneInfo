@@ -1,9 +1,7 @@
 ﻿using PhoneInfo.ApplicationLogic.Abstractions;
 using PhoneInfo.DataAccess;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace DataAccess
 {
@@ -17,6 +15,7 @@ namespace DataAccess
         public T Add(T itemToAdd)
         {
             var entity = dbContext.Add<T>(itemToAdd);
+            dbContext.SaveChanges();
             return entity.Entity;
         }
 

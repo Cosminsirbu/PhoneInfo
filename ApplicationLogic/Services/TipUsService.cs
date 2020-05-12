@@ -1,8 +1,7 @@
 ﻿using PhoneInfo.ApplicationLogic.Abstractions;
 using PhoneInfo.ApplicationLogic.DataModel;
 using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace ApplicationLogic.Services
 {
@@ -15,14 +14,14 @@ namespace ApplicationLogic.Services
             this.tipUsRepository = tipUsRepository;
         }
 
-        public void AddTipUs(string tipUsEmail, string tipUsContent)
+        public void AddTipUs(Guid tipUsId, string tipUsEmail, string tipUsContent, DateTime date)
         {
             tipUsRepository.Add(new TipUs()
             {
-                TipusId = Guid.NewGuid(),
+                TipusId = tipUsId,
                 Email = tipUsEmail,
                 Content = tipUsContent,
-                Date = DateTime.Now
+                Date = date
             });
         }
     }

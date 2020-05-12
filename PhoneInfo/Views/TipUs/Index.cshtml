@@ -1,47 +1,192 @@
-﻿@model IEnumerable<PhoneInfo.ApplicationLogic.DataModel.TipUs>
+﻿@model PhoneInfo.Models.TipUsViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "TipUs";
 }
 
-<h1>Index</h1>
+<form asp-action="Index" asp-controller="TipUs" method="post">
+    <section>
+        <div class="row d-flex justify-content-center col-12">
+            <div class="col-sm-10 col-md-6 col-lg-4 rounded m-24">
+                @*<form id="account" method="post" class="py-5">*@
+                <div class="d-flex justify-content-center">
+                    <h1 class="h3 mb-3 font-weight-normal">Tip Us</h1>
+                </div>
+                <div class="tipusposition">
+                    <p><font size="4" color="black">So you've got a hot story to share?</font></p>
+                    <p><font size="4" color="black">We're always on the lookout for good stories, no matter if it's some leaked product info,</font></p>
+                    <p><font size="4" color="black">a new invention, a nice piece of mobile software, a software update for your favorite</font></p>
+                    <p><font size="4" color="black">phone or stuff, regarding the market availability and pricing of any mobile phone.</font></p>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Content)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TipusId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TipusId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TipusId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                </div>
+
+                <div class="form-group ">
+                    <input asp-for="Email" class="form-control" placeholder="Email address" required autofocus />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group ">
+                    <input asp-for="Content" class="form-control" placeholder="Content" required />
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success btn-block">Submit</button>
+                </div>
+                @*</form>*@
+            </div>
+        </div>
+    </section>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<section class="banner-bottom py-5 editContent">
+        <div class="container py-md-5">
+            <h3 class="title-wthree mb-lg-5 mb-4 text-center editContent" style="outline: none; cursor: inherit;">Tip Us </h3>
+            <center>
+                <p><font size="4" color="black">So you've got a hot story to share?</font></p>
+                <p><font size="4" color="black">We're always on the lookout for good stories, no matter if it's some leaked product info,</font></p>
+                <p><font size="4" color="black">a new invention, a nice piece of mobile software, a software update for your favorite</font></p>
+                <p><font size="4" color="black">phone or stuff, regarding the market availability and pricing of any mobile phone.</font></p>
+            </center>
+            <div class="row contact_information">
+
+                <div class="col-md-6 editContent">
+                    <div class="contact_right p-lg-5 p-4 editContent">
+                        <form action="#" method="post">
+
+                            <div class="content-input-field field-group editContent" style="outline: none; cursor: inherit;">
+                                <input name="text1" id="text1" type="email" value="" placeholder="Your Email" required="">
+                            </div>
+
+                            <div class="content-input-field field-group editContent">
+                                <textarea placeholder="Your Message Here..." required=""></textarea>
+                            </div>
+
+                            <div class="content-input-field field-group editContent">
+                                <button type="submit" class="btn">Submit</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Content)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.TipusId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.TipusId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.TipusId">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@
+
+
+<style>
+    .btn-success {
+        background-color: #ec1c24 !important;
+    }
+</style>

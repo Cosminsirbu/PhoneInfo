@@ -4,103 +4,68 @@
     ViewData["Title"] = "Register";
 }
 
-<!--<h1>@ViewData["Title"]</h1>-->
-
-    <div class="row">
-
-        <!--<section class="banner-bottom py-5 editContent">
-            <div class="container">
-                <div class="content-grid">
-                    <div class="text-center icon">
-                        <span class="fa fa-user-circle-o" style="outline: none; cursor: inherit;"></span>
+<section>
+    <div class="row d-flex justify-content-center col-12">
+        <div class="col-sm-10 col-md-6 col-lg-4 rounded m-24">
+            <form id="account" method="post" class="py-5">
+                <div class="d-flex justify-content-center">
+                    <i class="fa fa-user-circle-o" style="font-size:48px;color:#ec1c24"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h1 class="h3 mb-3 font-weight-normal">Join us!</h1>
+                </div>
+                <div class="col-md-12">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <input asp-for="Input.UserName" class="form-control" placeholder="User Name" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
                     </div>
-                    <div class="content-bottom">
-                        <form action="#" method="post">
-                            <div class="field-group">
-
-                                <div class="content-input-field editContent">
-                                    <input name="text1" id="text1" type="text" value="" placeholder="User Name" required="">
-                                </div>
-                            </div>
-                            <div class="field-group">
-
-                                <div class="content-input-field editContent">
-                                    <input name="text1" id="text1" type="email" value="" placeholder="User Email" required="">
-                                </div>
-                            </div>
-                            <div class="field-group">
-                                <div class="content-input-field editContent">
-                                    <input name="password" id="myInput" type="Password" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="content-input-field">
-                                <button type="submit" class="btn" style="outline: none; cursor: inherit;">Sign Up</button>
-                            </div>
-                            <div class="list-login-bottom text-center mt-lg-5 mt-4">
-
-                                <a href="#" class="editContent" style="outline: none; cursor: inherit;">By clicking Signup, I agree to your terms</a>
-                            </div>
-                        </form>
+                    <div class="form-group">
+                        <input asp-for="Input.Email" class="form-control" placeholder="Email" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="Input.Password" class="form-control" placeholder="Password" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm password" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-lg btn-success btn-block">Register</button>
                     </div>
                 </div>
-            </div>
-        </section>-->
+            </form>
+        </div>
+    </div>
+</section>
 
-        <div class="col-md-4">
-        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h4>Create a new account.</h4>
-            <hr />
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="form-control" />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.ConfirmPassword"></label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">Register</button>
-        </form>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h4>Use another service to register.</h4>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
-        
-    </div>
+
+<style>
+    .form-control:focus {
+        border-color: #a72828 !important;
+        box-shadow: 0 0 2px rgba(187, 28, 36, 1) !important;
+    }
+
+    .btn-success {
+        color: #fff;
+        background-color: #ec1c24;
+        border-color: #ec1c24;
+    }
+
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    .btn-success:hover {
+        color: #fff;
+        background-color: #882121;
+        border-color: #c73a18;
+    }
+</style>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

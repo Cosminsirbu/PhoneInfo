@@ -41,11 +41,20 @@ namespace PhoneInfo
 
             services.AddScoped<IUser, UserRepository>();
             services.AddScoped<IPhone, PhoneRepository>();
-            //services.AddScoped<ITipUs, TipUsRepository>();
+            services.AddScoped<ITipUs, TipUsRepository>();
             //services.AddScoped<IAdmin, AdminRepository>();
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+
+            services.Configure<IdentityOptions>(options =>
+                {
+                    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                    options.Lockout.MaxFailedAccessAttempts = 10;
+                    options.Lockout.AllowedForNewUsers = true;
+                }
+            );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

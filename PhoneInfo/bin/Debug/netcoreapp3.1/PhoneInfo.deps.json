@@ -28,8 +28,9 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.3",
           "Microsoft.AspNetCore.Identity.UI": "3.1.3",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
-          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.2",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -389,16 +390,47 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Razor.Extensions/3.1.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Language": "3.1.3",
+          "Microsoft.CodeAnalysis.Razor": "3.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12808"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/3.1.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "3.1.3",
+          "Microsoft.CodeAnalysis.Razor": "3.1.3",
+          "Microsoft.Extensions.DependencyModel": "3.1.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.16314"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Razor/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Razor.Language/3.1.0": {
+      "Microsoft.AspNetCore.Razor.Language/3.1.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.19.56505"
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12808"
           }
         },
         "compile": {
@@ -607,16 +639,16 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Razor/3.1.0": {
+      "Microsoft.CodeAnalysis.Razor/3.1.3": {
         "dependencies": {
-          "Microsoft.AspNetCore.Razor.Language": "3.1.0",
+          "Microsoft.AspNetCore.Razor.Language": "3.1.3",
           "Microsoft.CodeAnalysis.CSharp": "3.3.1",
           "Microsoft.CodeAnalysis.Common": "3.3.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.19.56505"
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12808"
           }
         },
         "compile": {
@@ -714,25 +746,25 @@
           "ref/netcoreapp2.1/Microsoft.Data.SqlClient.dll": {}
         }
       },
-      "Microsoft.Data.Sqlite.Core/3.1.2": {
+      "Microsoft.Data.Sqlite.Core/3.1.3": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "3.1.2.0",
-            "fileVersion": "3.100.220.6703"
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12804"
           }
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {}
         }
       },
-      "Microsoft.DotNet.PlatformAbstractions/3.1.2": {
+      "Microsoft.DotNet.PlatformAbstractions/3.1.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
-            "assemblyVersion": "3.1.2.0",
-            "fileVersion": "3.100.220.6704"
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12801"
           }
         },
         "compile": {
@@ -800,23 +832,23 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite/3.1.2": {
+      "Microsoft.EntityFrameworkCore.Sqlite/3.1.3": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.2",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.3",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.0.2"
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite.Core/3.1.2": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/3.1.3": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "3.1.2",
-          "Microsoft.DotNet.PlatformAbstractions": "3.1.2",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.3",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.3",
-          "Microsoft.Extensions.DependencyModel": "3.1.2"
+          "Microsoft.Extensions.DependencyModel": "3.1.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
-            "assemblyVersion": "3.1.2.0",
-            "fileVersion": "3.100.220.6703"
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12804"
           }
         },
         "compile": {
@@ -941,14 +973,14 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyModel/3.1.2": {
+      "Microsoft.Extensions.DependencyModel/3.1.3": {
         "dependencies": {
           "System.Text.Json": "4.7.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
-            "assemblyVersion": "3.1.2.0",
-            "fileVersion": "3.100.220.6704"
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12801"
           }
         },
         "compile": {
@@ -1164,10 +1196,10 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Templating/3.1.2": {
         "dependencies": {
-          "Microsoft.AspNetCore.Razor.Language": "3.1.0",
+          "Microsoft.AspNetCore.Razor.Language": "3.1.3",
           "Microsoft.AspNetCore.Razor.Runtime": "2.2.0",
           "Microsoft.CodeAnalysis.CSharp": "3.3.1",
-          "Microsoft.CodeAnalysis.Razor": "3.1.0",
+          "Microsoft.CodeAnalysis.Razor": "3.1.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "3.1.2"
         },
         "runtime": {
@@ -4090,6 +4122,20 @@
       "path": "microsoft.aspnetcore.identity.ui/3.1.3",
       "hashPath": "microsoft.aspnetcore.identity.ui.3.1.3.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Mvc.Razor.Extensions/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G7JPkb84X1qJPUJU1Iw0i0XeQOkHQzjTjtpI1lL3HI0pa2ls9RY5Ffw7PzhPqFMposoatlzN9S4oUHKh1dtP4A==",
+      "path": "microsoft.aspnetcore.mvc.razor.extensions/3.1.3",
+      "hashPath": "microsoft.aspnetcore.mvc.razor.extensions.3.1.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bEXSIYzI+yy01DkHsIzoZzPA6/MhW79zokQC05zPYJMfJWbhTjxbXi1Oo8E9xv4fSMcgo8UB1BEcy4pZ/lkvRw==",
+      "path": "microsoft.aspnetcore.mvc.razor.runtimecompilation/3.1.3",
+      "hashPath": "microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.3.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -4097,12 +4143,12 @@
       "path": "microsoft.aspnetcore.razor/2.2.0",
       "hashPath": "microsoft.aspnetcore.razor.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Razor.Language/3.1.0": {
+    "Microsoft.AspNetCore.Razor.Language/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e/atqZ5CzmJWuG/yaYOzbWNON+oqNKfk1M/xTYW+hje/RoiUUjVP88wrX1s9rEHzaAU4UljIOSvMxLABc2X2gg==",
-      "path": "microsoft.aspnetcore.razor.language/3.1.0",
-      "hashPath": "microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512"
+      "sha512": "sha512-ppyl8fVmL9NRGmmzWHoxzf2OSQ+6bPjubMR0W4uzzpdF488o3YB81a1zzHbbEK1ZjgZelhIBghR6y7nUD/kd3Q==",
+      "path": "microsoft.aspnetcore.razor.language/3.1.3",
+      "hashPath": "microsoft.aspnetcore.razor.language.3.1.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Runtime/2.2.0": {
       "type": "package",
@@ -4153,12 +4199,12 @@
       "path": "microsoft.codeanalysis.csharp.workspaces/3.3.1",
       "hashPath": "microsoft.codeanalysis.csharp.workspaces.3.3.1.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Razor/3.1.0": {
+    "Microsoft.CodeAnalysis.Razor/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EI/9iVMneil8nZn7mqEujJvV63VRaz01Czc69NTrCQAh5CRfBvoeqBVsDx6oC9CIYla/AJYss+U4B/6Usecx7A==",
-      "path": "microsoft.codeanalysis.razor/3.1.0",
-      "hashPath": "microsoft.codeanalysis.razor.3.1.0.nupkg.sha512"
+      "sha512": "sha512-nxoijX1D1MuI5sKkeCKPBkL3+qu6qgm2lzLt4oTe6SdBk5H1AiJQ6N+EGzrjItSOpY9jf4dh0R0Cz/lGZrAuug==",
+      "path": "microsoft.codeanalysis.razor/3.1.3",
+      "hashPath": "microsoft.codeanalysis.razor.3.1.3.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Workspaces.Common/3.3.1": {
       "type": "package",
@@ -4181,19 +4227,19 @@
       "path": "microsoft.data.sqlclient/1.0.19269.1",
       "hashPath": "microsoft.data.sqlclient.1.0.19269.1.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/3.1.2": {
+    "Microsoft.Data.Sqlite.Core/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6j5E9qke3hDbKiz2/2N+ofbiHHIIfGgI8Rq8eyG9AYdBY+SzDI74I9fzDaGrnd+cfFEiZh8pwcA+d6GAOwhoXA==",
-      "path": "microsoft.data.sqlite.core/3.1.2",
-      "hashPath": "microsoft.data.sqlite.core.3.1.2.nupkg.sha512"
+      "sha512": "sha512-7CUGlDpoS6s/JucVWBpg/hwV2Iehrd6Egbg+Rk24el5R+BZ4AlW25kY5wcsvxvqzlqXntw5hr2E9qFgQrED7fg==",
+      "path": "microsoft.data.sqlite.core/3.1.3",
+      "hashPath": "microsoft.data.sqlite.core.3.1.3.nupkg.sha512"
     },
-    "Microsoft.DotNet.PlatformAbstractions/3.1.2": {
+    "Microsoft.DotNet.PlatformAbstractions/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VFkzaiSK1j9fkdA/cWRk2st2gKA3x8CukFrVoGwL2X5m8eJ1ZhpeSxDlKb/TP6VY3ci/dwoN81Du95Mf/TosiA==",
-      "path": "microsoft.dotnet.platformabstractions/3.1.2",
-      "hashPath": "microsoft.dotnet.platformabstractions.3.1.2.nupkg.sha512"
+      "sha512": "sha512-bwD01wYeN+g+Yib7XXahbRdvh5lj6PJ0si6TO6kP7n+fQsBxGy18ewJLjTZUxCwWJqX39WfQHM6idtE4QuVaiw==",
+      "path": "microsoft.dotnet.platformabstractions/3.1.3",
+      "hashPath": "microsoft.dotnet.platformabstractions.3.1.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/3.1.3": {
       "type": "package",
@@ -4230,19 +4276,19 @@
       "path": "microsoft.entityframeworkcore.relational/3.1.3",
       "hashPath": "microsoft.entityframeworkcore.relational.3.1.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite/3.1.2": {
+    "Microsoft.EntityFrameworkCore.Sqlite/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-h+af7gO+IMsvXhpNus7+gmVgU4xLk3/de+SRHkd9639KWUqab97ejZIh+41/yN7qO28gEpEFL60W0IvyJj94Cg==",
-      "path": "microsoft.entityframeworkcore.sqlite/3.1.2",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.3.1.2.nupkg.sha512"
+      "sha512": "sha512-xRggLUP5O68OcpvdMorga429G9tYVb0JZOX/w779kLKbNPbCLxvr8e39xdY4EivLSBtedXr/HY2GEkKhBRilkA==",
+      "path": "microsoft.entityframeworkcore.sqlite/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.3.1.3.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite.Core/3.1.2": {
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hAWBUKsdZJsvEWAgm7aCWu1v4UtgIiNKUwAOR2Dn4Z1iwAsQtvxhWcTTuDQBjOxEiWytvILa17mVS3iTWZfOvg==",
-      "path": "microsoft.entityframeworkcore.sqlite.core/3.1.2",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.core.3.1.2.nupkg.sha512"
+      "sha512": "sha512-RI9rlHZvx5zXuY9zUrQ2yN7oKrFbgn+AA2pL/sWionvlN3sbGXr1PWt8t1vG5yDE3YqctS/ypA8gmE8LGwzOsQ==",
+      "path": "microsoft.entityframeworkcore.sqlite.core/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.core.3.1.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.SqlServer/3.1.3": {
       "type": "package",
@@ -4307,12 +4353,12 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.3",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyModel/3.1.2": {
+    "Microsoft.Extensions.DependencyModel/3.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AZR4ChHbwEHArC6iuLyf5Pr7BANayuVGcDUzuF+HoX5P1MTxFnyJu7cYOgRwPWAgIDZftqqeOm4LbGIQnQXsTw==",
-      "path": "microsoft.extensions.dependencymodel/3.1.2",
-      "hashPath": "microsoft.extensions.dependencymodel.3.1.2.nupkg.sha512"
+      "sha512": "sha512-NrcgRhryflmjz16bwr2krbQyhMstOhRi6dD39KEhUGRKVdXEKOppVVOOelxchIFVfNUGs5SEvcAm+binU09S3g==",
+      "path": "microsoft.extensions.dependencymodel/3.1.3",
+      "hashPath": "microsoft.extensions.dependencymodel.3.1.3.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/3.1.3": {
       "type": "package",

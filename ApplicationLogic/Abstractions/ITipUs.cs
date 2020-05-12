@@ -7,7 +7,7 @@ namespace PhoneInfo.ApplicationLogic.Abstractions
 {
     public interface ITipUs: IRepository<TipUs>
     {
-        void AddTipUs(string tipUsEmail, string tipUsContent);
+        void AddTipUs(Guid tipUsId, string tipUsEmail, string tipUsContent, DateTime date);
 
     }
 }

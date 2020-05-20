@@ -1,0 +1,364 @@
+﻿@model IEnumerable<PhoneInfo.ApplicationLogic.DataModel.Phone>
+
+@{
+    ViewData["Title"] = "Samsung Note10+";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/lightbox.min.css">
+<!-- //Custom Theme files -->
+<!-- /Fonts -->
+@*<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">*@
+
+
+<!-- Main body-->
+<div class="body_agileinfo_topf editContent">
+    <div class="container py-md-5 spectrum">
+        <!-- header specification -->
+        <div class="row">
+
+            <div class="col-sm-4">
+                <!--Phone image-->
+                <center><h2>Samsung Note 10+</h2></center>
+                <a class="image-link" href="~/content/static/g1.jpg" data-lightbox="Note10+"><img class="img-fluid mt-4" src="~/content/static/g1.png" alt=""></a>
+                <a class="image-link" href="~/content/static/Note10 (1).jpg" data-lightbox="Note10+"></a>
+                <a class="image-link" href="~/content/static/Note10 (2).jpg" data-lightbox="Note10+"></a>
+                <a class="image-link" href="~/content/static/Note10 (3).jpg" data-lightbox="Note10+"></a>
+                <a class="image-link" href="~/content/static/Note10 (4).jpg" data-lightbox="Note10+"></a>
+            </div>
+
+            <div class="mycol-lg-6 test" style="margin-top:5%; width:66%">
+                <!--Phone short description-->
+                <div class="mycol-sm-6" style="margin-bottom:4%">
+                    <h3><a class="fa fa-calendar">Released 2019, August</a></h3>
+                </div>
+                <div class="mycol-sm-6" style="margin-bottom:4%">
+                    <h3><a class="fa fa-tablet">196g, 7.9mm thickness</a></h3>
+                </div>
+                <div class="mycol-sm-6" style="margin-bottom:4%">
+                    <h3><a class="fa fa-angle-left"></a> <a class="fa fa-angle-right">Android 9.0, up to Android 10.0; One UI 2</a></h3>
+                </div>
+                <div class="mycol-sm-6" style="margin-bottom:4%">
+                    <h3><a class="fa fa-microchip">256GB/512GB storage, microSDXC</a></h3>
+                </div>
+                <div class="mycol-sm-6" style="margin-bottom:4%">
+                    <h3>
+                        <a style="margin-right:20%"> <span class="fa fa-expand"></span></a>
+                        <a style="margin-right:20%"> <span class="fa fa-camera-retro"></span></a>
+                        <a style="margin-right:20%"> <span class="fa fa-microchip"></span></a>
+                        <a style="margin-right:20%"> <span class="fa fa-battery-2"></span></a>
+                    </h3>
+                </div>
+                <div class="mycol-sm-6">
+                    <h4>
+                        <a> 6,8"</a>
+                        <a style="margin-left:17%"> 12MP</a>
+                        <a style="margin-left:16%"> 12GB RAM</a>
+                        <a style="margin-left:8%"> 4300 mAh</a>
+                    </h4>
+                </div>
+                <div class="mycol-sm-4">
+                    <a> 1440x3040 pixels</a>
+                    <a style="margin-left:7%"> 2160p</a>
+                    <a style="margin-left:18.5%"> Exynos 9825</a>
+                    <a style="margin-left:12%"> Li-Ion</a>
+                </div>
+                <div class="container">
+                    <a class="pagesbutton1 fa fa-long-arrow-up" asp-controller="Phones" asp-action="Compare"><span class="fa fa-long-arrow-down"></span>Compare</a>
+                    <a class="pagesbutton2 fa fa-commenting" asp-controller="Phones" asp-action="Index">Opinions</a>
+                </div>
+
+                    @*<div>
+                        <a href="Compare.html" class="btn button"><span class="fa fa-long-arrow-up"></span><span class="fa fa-long-arrow-down"></span> Compare</a>
+                        <a href="Note10Comment.html" class="btn button1"><span class="fa fa-commenting"></span> Opinions</a>
+                    </div>*@
+            </div>
+        </div><!--/Phone short description-->
+    </div>
+</div> <!-- /header specification -->
+
+<div class="container specbackground">
+    <!-- body/table specification -->
+    <table>
+        <tr>
+            <th> <font color="red">NETWORK</font> </th>
+            <th>Technology</th>
+            <th>GSM / CDMA / HSPA / EVDO / LTE</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">LAUNCH</font> </th>
+            <th>Announced</th>
+            <th>2019, August</th>
+        </tr>
+        <tr>
+            <th>  </th>
+            <th>Status</th>
+            <th>Available, Released 2019, August</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Body</font> </th>
+            <th>Dimensions</th>
+            <th>162.3 x 77.2 x 7.9 mm (6.39 x 3.04 x 0.31 in)</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Weight</th>
+            <th>196 g (6.91 oz)</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Build</th>
+            <th>Glass front (Gorilla Glass 6), glass back (Gorilla Glass 6), aluminum frame</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>SIM</th>
+            <th>Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Display</font> </th>
+            <th>Type</th>
+            <th>Dynamic AMOLED capacitive touchscreen, 16M colors</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Size</th>
+            <th>6.8 inches, 114.0 cm2 (~91.0% screen-to-body ratio)</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Resolution</th>
+            <th>1440 x 3040 pixels, 19:9 ratio (~498 ppi density)</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Protection</th>
+            <th>Corning Gorilla Glass 6</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Platform</font> </th>
+            <th>OS</th>
+            <th>Android 9.0 (Pie), upgradable to Android 10.0; One UI 2</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Chipset</th>
+            <th>Exynos 9825 (7 nm) - EMEA/LATAM</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>CPU</th>
+            <th>Octa-core (2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55) - EMEA/LATAM</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>GPU</th>
+            <th>Mali-G76 MP12 - EMEA/LATAM</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Memory</font> </th>
+            <th>Card slot</th>
+            <th>	microSDXC (uses shared SIM slot) - dual SIM model only</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Internal</th>
+            <th>256GB 12GB RAM, 512GB 12GB RAM</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Main Camera</font> </th>
+            <th>Quad</th>
+            <th>12 MP, f/1.5-2.4, 27mm (wide), 1/2.55", 1.4µm, Dual Pixel PDAF, OIS</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>12 MP, f/2.1, 52mm (telephoto), 1/3.6", 1.0µm, PDAF, OIS, 2x optical zoom</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>16 MP, f/2.2, 12mm (ultrawide), 1/3.1", 1.0µm, Super Steady video</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>0.3 MP, TOF 3D, (depth)</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Video</th>
+            <th>2160p@30/60fps, 1080p@30/60/240fps, 720p@960fps, HDR10+, dual-video rec., stereo sound rec., gyro-EIS & OIS</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Selfie Camera</font> </th>
+            <th>Single</th>
+            <th>10 MP, f/2.2, 26mm (wide), 1/3", 1.22µm, Dual Pixel PDAF</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Video</th>
+            <th>2160p@30fps</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;"> 
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Sound</font> </th>
+            <th>Loudspeaker</th>
+            <th>Yes, with stereo speakers</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>3.5mm jack</th>
+            <th>NO</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>32-bit/384kHz audio</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Features</font> </th>
+            <th>Sensors</th>
+            <th>Fingerprint(under display, ultrasonic), accelerometer, gyro, proximity</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>Samsung Dex(desktop experince support)</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>Bixby natural language commands and dictation</th>
+        </tr>
+
+        <tr style="border-bottom: 1px solid lightgrey;">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th> <font color="red">Battery</font> </th>
+            <th>Charging</th>
+            <th>Non-removable Li-Ion 4300 mAh battery</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>Fast charging 45W</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>USB Power Delivery 3.0</th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th></th>
+            <th>Power bank/Reverse wireless charging 9W</th>
+        </tr>
+    </table>
+</div> <!-- /body/table specification -->
+
+
+<!-- Font-Awesome-Icons-CSS -->
+<script src="~/lib/bootstrap/dist/js/lightbox-plus-jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PhoneId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.PhoneId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PhoneId">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@

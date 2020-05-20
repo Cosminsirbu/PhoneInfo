@@ -14,16 +14,8 @@ namespace DataAccess
         }
 
 
-        public void AddTipUs(Guid tipUsId, string tipUsEmail, string tipUsContent, DateTime date)
+        public void AddTipUs(TipUs tipUs)
         {
-            TipUs tipUs = new TipUs()
-            {
-                TipusId = tipUsId,
-                Email = tipUsEmail,
-                Content = tipUsContent,
-                Date = date
-            };
-
             Add(tipUs);
         }
     }

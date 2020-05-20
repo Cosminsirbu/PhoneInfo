@@ -20,10 +20,43 @@ namespace PhoneInfo.Controllers
         }
 
         // GET: Phones
-        public async Task<IActionResult> Index()
+        public IActionResult samsungnote10()
         {
-            return View(await _context.Phone.ToListAsync());
+            return View();
         }
+        // GET: Phones
+        public IActionResult samsungs20ultra()
+        {
+            return View();
+        }
+        // GET: Phones
+        public IActionResult LgV60()
+        {
+            return View();
+        }
+        // GET: Phones
+        public IActionResult Iphone11Pro()
+        {
+            return View();
+        }
+        // GET: Phones
+        public IActionResult Iphone11()
+        {
+            return View();
+        }
+        // GET: Phones
+        public IActionResult HuaweiP40Pro()
+        {
+            return View();
+        }
+        // GET: Phones
+        public IActionResult Compare()
+        {
+            return View();
+        }
+
+
+
 
         // GET: Phones/Details/5
         public async Task<IActionResult> Details(Guid? id)

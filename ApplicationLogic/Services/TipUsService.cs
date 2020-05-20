@@ -5,7 +5,7 @@ using System;
 
 namespace ApplicationLogic.Services
 {
-    class TipUsService
+    public class TipUsService
     {
         private readonly ITipUs tipUsRepository;
 
@@ -16,7 +16,7 @@ namespace ApplicationLogic.Services
 
         public void AddTipUs(Guid tipUsId, string tipUsEmail, string tipUsContent, DateTime date)
         {
-            tipUsRepository.Add(new TipUs()
+            tipUsRepository.AddTipUs(new TipUs()
             {
                 TipusId = tipUsId,
                 Email = tipUsEmail,

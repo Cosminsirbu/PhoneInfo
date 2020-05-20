@@ -2,14 +2,17 @@
 using PhoneInfo.ApplicationLogic.Abstractions;
 using PhoneInfo.ApplicationLogic.DataModel;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ApplicationLogic.Services
 {
-    class PhoneService
+    public class PhoneService
     {
-        private readonly IPhone PhoneRepository;
+        private readonly IPhone _PhoneRepository;
+        public PhoneService(IPhone PhoneRepository)
+        {
+            _PhoneRepository = PhoneRepository;
+        }
+
         public Phone GetPhoneByPhoneId(string phoneId)
         {
             Guid phoneIdGuid = Guid.Empty;
@@ -18,7 +21,7 @@ namespace ApplicationLogic.Services
                 throw new Exception("Invalid Guid Format");
             }
 
-            var phone = PhoneRepository.GetPhoneByPhoneId(phoneIdGuid);
+            var phone = _PhoneRepository.GetPhoneByPhoneId(phoneIdGuid);
             if (phone == null)
             {
                 throw new EntityNotFoundException(phoneIdGuid);
@@ -27,9 +30,10 @@ namespace ApplicationLogic.Services
             return phone;
         }
 
-        //public Comment AddPhoneComment(string phoneId)
-        //{
+        public string GetPage(string name)
+        {
+            return _PhoneRepository.GetPage(name);
+        }
 
-        //}
     }
 }

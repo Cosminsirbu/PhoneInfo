@@ -7,135 +7,33 @@
 <form asp-action="Index" asp-controller="TipUs" method="post">
     <section>
         <div class="row d-flex justify-content-center col-12">
-            <div class="col-sm-10 col-md-6 col-lg-4 rounded m-24">
-                @*<form id="account" method="post" class="py-5">*@
+            <div class="text">
                 <div class="d-flex justify-content-center">
-                    <h1 class="h3 mb-3 font-weight-normal">Tip Us</h1>
+                    <h1 class="h3 mb-3 font-weight-normal" style="font-size:40px;">Tip Us</h1>
                 </div>
-                <div class="tipusposition">
+                <center style="margin-bottom:10%">
                     <p><font size="4" color="black">So you've got a hot story to share?</font></p>
                     <p><font size="4" color="black">We're always on the lookout for good stories, no matter if it's some leaked product info,</font></p>
                     <p><font size="4" color="black">a new invention, a nice piece of mobile software, a software update for your favorite</font></p>
                     <p><font size="4" color="black">phone or stuff, regarding the market availability and pricing of any mobile phone.</font></p>
 
-                </div>
+                </center>
 
                 <div class="form-group ">
                     <input asp-for="Email" class="form-control" placeholder="Email address" required autofocus />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-                <div class="form-group ">
-                    <input asp-for="Content" class="form-control" placeholder="Content" required />
+                <div class="form-group">
+                    <textarea asp-for="Content" placeholder="  Content" cols="100" rows="5"></textarea>
                     <span asp-validation-for="Content" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-lg btn-success btn-block">Submit</button>
+                <div class="button_cont" align="center">
+                    <button type="submit" class="example_d">Submit</button>
                 </div>
-                @*</form>*@
             </div>
         </div>
     </section>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@*<section class="banner-bottom py-5 editContent">
-        <div class="container py-md-5">
-            <h3 class="title-wthree mb-lg-5 mb-4 text-center editContent" style="outline: none; cursor: inherit;">Tip Us </h3>
-            <center>
-                <p><font size="4" color="black">So you've got a hot story to share?</font></p>
-                <p><font size="4" color="black">We're always on the lookout for good stories, no matter if it's some leaked product info,</font></p>
-                <p><font size="4" color="black">a new invention, a nice piece of mobile software, a software update for your favorite</font></p>
-                <p><font size="4" color="black">phone or stuff, regarding the market availability and pricing of any mobile phone.</font></p>
-            </center>
-            <div class="row contact_information">
-
-                <div class="col-md-6 editContent">
-                    <div class="contact_right p-lg-5 p-4 editContent">
-                        <form action="#" method="post">
-
-                            <div class="content-input-field field-group editContent" style="outline: none; cursor: inherit;">
-                                <input name="text1" id="text1" type="email" value="" placeholder="Your Email" required="">
-                            </div>
-
-                            <div class="content-input-field field-group editContent">
-                                <textarea placeholder="Your Message Here..." required=""></textarea>
-                            </div>
-
-                            <div class="content-input-field field-group editContent">
-                                <button type="submit" class="btn">Submit</button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>*@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

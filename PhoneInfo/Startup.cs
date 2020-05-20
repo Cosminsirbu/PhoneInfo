@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using PhoneInfo.DataAccess;
 using PhoneInfo.ApplicationLogic.Abstractions;
 using DataAccess;
+using ApplicationLogic.Services;
 
 namespace PhoneInfo
 {
@@ -43,6 +44,8 @@ namespace PhoneInfo
             services.AddScoped<IPhone, PhoneRepository>();
             services.AddScoped<ITipUs, TipUsRepository>();
             //services.AddScoped<IAdmin, AdminRepository>();
+            services.AddScoped <TipUsService>();
+            services.AddScoped <PhoneService>();
 
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();

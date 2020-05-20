@@ -16,15 +16,18 @@
             <div class="container">
                 <a class="fa fa-android" style="color:red"></a>
                 <a class="navbar-brand " asp-area="" asp-controller="Home" asp-action="Index">PhoneInfo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                @*<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button>*@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="TipUs" asp-action="Index">TipUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Phones" asp-action="Compare">Compare</a>
                         </li>
                     </ul>
                 </div>
@@ -38,13 +41,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted" style="background-color:white">
+    <footer class="border-top footer text-muted" style="background-color:#29282e">
         <div class="container col-sm-6">
             <div class="w3ls-fsocial">
                 <h3 class="sub-w3ls-headf editContent">Follow Us</h3>
                 <div class="social-ficons">
                     <ul>
-                        <li><a href="https://www.facebook.com" class="facebook editContent"><span class="fa fa-facebook" style="outline: none; cursor: inherit;"></span> Facebook</a></li>
+                        <li><a href="https://www.facebook.com" class="facebook editContent"><span class="fa fa-facebook" style="outline: none; cursor: inherit;color:rgb(0, 208, 255)"></span> Facebook</a></li>
                         <li><a href="https://www.Twitter.com" class="twitter editContent"><span class="fa fa-twitter" style="outline: none; cursor: inherit;"></span> Twitter</a></li>
                         <li><a href="https://www.Instagram.com" class="google editContent"><span class="fa fa-instagram" style="outline: none; cursor: inherit;"></span>Instagram</a></li>
                     </ul>
@@ -56,8 +59,8 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="background-color:lightgray">
-            <div style="margin-left:34%">
+        <div class="container">
+            <div style="margin-left:30%; color:white">
                 &copy; 2020 PhoneInfo. All rights reserved | Design by Cosmin Sirbu
             </div>
         </div>

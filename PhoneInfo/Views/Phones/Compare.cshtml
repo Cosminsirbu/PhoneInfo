@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Compare";
+}
+<script src="~/lib/bootstrap/dist/js/jquery-1.9.1.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/Compare.js"></script>
+<link href="~/lib/bootstrap/dist/css/Compare.css" rel="stylesheet">
+
+
+    <div class="w3-container">
+        <div class="w3-row-padding">
+
+            <div class="container">
+                <div class="row comparepos">
+                    <div class="w3-col l3 m6 relPos w3-center">
+                        <div class="selectProduct w3-padding" data-title="SamsungGalaxyS20Ultra" data-id="Samsung Galaxy S20 Ultra" data-size="4.9" data-weight="130 g" data-processor="2.3 GHz, Quad Core, Qualcomm Snapdragon 800" data-battery="2300 mAH">
+                            <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                            <img src="~/content/static/S20ultra (1).png" class="imgFill productImg" style="width:200px;">
+                            <h4>Samsung Galaxy S20 Ultra</h4>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l3 m6 relPos w3-center">
+                        <div class="selectProduct w3-padding" data-title="AppleIphone11" data-id="Apple Iphone 11" data-size="5.2" data-weight="136 g" data-processor="1.44 GHz, Quad Core, Qualcomm Snapdragon 808" data-battery="2700 mAH">
+                            <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                            <img src="~/content/static/Iphone11 (1).png" class="imgFill productImg" style="width: 175px;">
+                            <h4>Apple Iphone 11</h4>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l3 m6 relPos w3-center">
+                        <div class="selectProduct w3-padding" data-title="LgV60ThinQ5G" data-id="Lg V60 ThinQ 5G" data-size="6" data-weight="184 g" data-processor="2.7 GHz, Quad Core, Qualcomm Snapdragon 805" data-battery="3220 mAH">
+                            <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                            <img src="~/content/static/LgV60 (1).png" class="imgFill productImg" style="width: 140px;">
+                            <h4>Lg V60 ThinQ 5G</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row comparepos">
+                    <div class="w3-col l3 m6 relPos w3-center">
+                        <div class="selectProduct w3-padding" data-title="Note10" data-id="Note 10+" data-size="4.9" data-weight="130 g" data-processor="2.3 GHz, Quad Core, Qualcomm Snapdragon 800" data-battery="2300 mAH">
+                            <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                            <img src="~/content/static/g1.png" class="imgFill productImg" style="width: 200px;">
+                            <h4>Note10+</h4>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l3 m6 relPos w3-center">
+                        <div class="selectProduct w3-padding" data-title="AppleIphone11Pro" data-id="Apple iphone 11 Pro" data-size="5.2" data-weight="136 g" data-processor="1.44 GHz, Quad Core, Qualcomm Snapdragon 808" data-battery="2700 mAH">
+                            <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                            <img src="~/content/static/Iphone11pro (6).png" class="imgFill productImg" style="width: 210px;">
+                            <h4>Apple iphone 11 Pro</h4>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l3 m6 relPos  w3-center ">
+                        <div class="selectProduct w3-padding" data-title="HuaweiP40Pro" data-id="Huawei P40 Pro" data-size="6" data-weight="184 g" data-processor="2.7 GHz, Quad Core, Qualcomm Snapdragon 805" data-battery="3220 mAH">
+                            <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                            <img src="~/content/static/Huawei P40 Pro (1).png" class="imgFill productImg" style="width: 180px;">
+                            <h4>Huawei P40 Pro</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--preview panel-->
+    <div class="w3-container  w3-center">
+        <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
+            <div class="w3-row">
+                <div class="w3-col l9 m8 s6 w3-margin-top">
+                    <h4>Added for comparison</h4>
+                </div>
+                <div class="w3-col l3 m4 s6 w3-margin-top">
+                    <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+                </div>
+            </div>
+            <div class=" titleMargin w3-container comparePan">
+            </div>
+        </div>
+    </div>
+    <!--end of preview panel-->
+    <!-- comparision popup-->
+    <div id="id01" class="w3-animate-zoom w3-white w3-modal modPos">
+        <div class="w3-container">
+            <a onclick="document.getElementById('id01').style.display='none'" class="whiteFont w3-padding w3-closebtn closeBtn">×</a>
+        </div>
+        <div class="w3-row contentPop w3-margin-top">
+        </div>
+
+    </div>
+    <!--end of comparision popup-->
+    <!--  warning model  -->
+    <div id="WarningModal" class="w3-modal">
+        <div class="w3-modal-content warningModal">
+            <header class="w3-container w3-teal">
+                <h3><span>⚠</span>Error</h3>
+            </header>
+            <div class="w3-container">
+                <h4>Maximum of Three products are allowed for comparision</h4>
+
+            </div>
+            <footer class="w3-container w3-right-align">
+                <button id="warningModalClose" onclick="document.getElementById('id01').style.display='none'" class="w3-btn w3-hexagonBlue w3-margin-bottom  ">Ok</button>
+            </footer>
+        </div>
+    </div>
+    <!--  end of warning model  -->

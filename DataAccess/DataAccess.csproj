@@ -7,6 +7,12 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200413204604_UpdateDatModel.cs" />
     <Compile Remove="Migrations\20200413204604_UpdateDatModel.Designer.cs" />
+    <Compile Remove="Migrations\20200519052231_Update_Data_model.cs" />
+    <Compile Remove="Migrations\20200519052231_Update_Data_model.Designer.cs" />
+    <Compile Remove="Migrations\20200519053111_Update_data_model.cs" />
+    <Compile Remove="Migrations\20200519053111_Update_data_model.Designer.cs" />
+    <Compile Remove="Migrations\20200519174447_update_data_model.cs" />
+    <Compile Remove="Migrations\20200519174447_update_data_model.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

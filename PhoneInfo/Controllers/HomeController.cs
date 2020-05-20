@@ -1,31 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using ApplicationLogic.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using PhoneInfo.Models;
 
 namespace PhoneInfo.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly PhoneService _phoneService;
+        private string retPage;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(PhoneService phoneService)
         {
-            _logger = logger;
+            _phoneService = phoneService;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Index(SearchViewModel vm)
         {
-            return View();
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    retPage = _phoneService.GetPage(vm.Search);
+                }
+                catch (Exception ex)
+                {
+                    ModelState.Clear();
+                    ViewBag.Message = $" Sorry we are facing Problem here {ex.Message}";
+                }
+            }
+
+            return View(retPage);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

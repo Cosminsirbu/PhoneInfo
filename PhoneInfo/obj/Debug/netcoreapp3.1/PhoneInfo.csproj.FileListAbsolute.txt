@@ -533,7 +533,6 @@ C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\R
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Delete.cshtml.g.cs
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Details.cshtml.g.cs
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Edit.cshtml.g.cs
-C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Index.cshtml.g.cs
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -558,3 +557,10 @@ C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\s
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\PhoneInfo.dll
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\PhoneInfo.pdb
 C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\PhoneInfo.genruntimeconfig.cache
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\LgV60.cshtml.g.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Iphone11Pro.cshtml.g.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Iphone11.cshtml.g.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\HuaweiP40Pro.cshtml.g.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\Compare.cshtml.g.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\samsungnote10.cshtml.g.cs
+C:\Users\Cosmin Sirbu\source\repos\PhoneInfo\PhoneInfo\obj\Debug\netcoreapp3.1\Razor\Views\Phones\samsungs20ultra.cshtml.g.cs

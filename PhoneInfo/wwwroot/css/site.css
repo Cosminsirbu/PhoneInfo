@@ -12,6 +12,10 @@ a {
   color: #0366d6;
 }
 
+.bottomdis {
+    margin-bottom:0.9rem!important;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -66,7 +70,7 @@ body {
   position: absolute;
   width: 100%;
   white-space: nowrap;
-  margin-top:18%;
+  margin-top: 13%;
   /*line-height: 60px;*/ /* Vertically center the text there */
 }
 
@@ -84,7 +88,7 @@ body {
 }
 
 h3.sub-w3ls-headf {
-    color: #3a3a3a;
+    color: white;
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -139,25 +143,167 @@ h3.sub-w3ls-headf {
 }
 /* //Footer */
 
+.tipuscontent{
 
-/* Tip Us */
-
-.tipusposition {
-
-    margin-bottom:110px;
-}
-/* //Tip Us */
-
-
-/* Navbar */
-
-.search-form {
-    width: 30%;
 }
 
-form.newsletter {
-    background: #fff;
-    padding: 0.3em;
+.search {
+    width: 50%;
+    position: relative;
     display: flex;
+    margin-left: 25%;
+    margin-top: -5%;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 2px solid #ec1c24;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #ec1c24;
+    /*margin-left:30%;*/
+}
+
+    .searchTerm:focus {
+        color: #00B4CC;
+    }
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #ec1c24;
+    background: #ec1c24;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    /*margin-right:30%;*/
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* //Navbar */
+
+
+/* Submit button tipus*/
+.example_d {
+    color: white !important;
+    font-size: 20px;
+    background: #ec1c24;
+    padding: 6px;
+    border: 3px solid #ec1c24 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width:60%;
+}
+.example_d:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.form-control{
+    border: 1px solid darkgrey;
+}
+/* //Submit button tipus*/
+
+
+
+/* Phones pages*/
+
+linebottom {
+    border-bottom: 3px solid #1C6EA4;
+}
+
+.specbackground {
+    background-color: #f1f1f1;
+}
+
+.spectrum {
+    background: linear-gradient( to left, rgb(74, 182, 253), transparent);
+    background-blend-mode: screen;
+    margin-bottom: 20px;
+}
+
+.spectrumHuawei {
+    background: linear-gradient( to left, rgb(255, 215, 155), transparent);
+    background-blend-mode: screen;
+    margin-bottom: 20px;
+}
+
+.spectrumS20 {
+    background: linear-gradient( to left, rgb(78, 78, 78), transparent);
+    background-blend-mode: screen;
+    margin-bottom: 20px;
+}
+
+.spectrumIphone11 {
+    background: linear-gradient( to left, rgb(65, 202, 150), transparent);
+    background-blend-mode: screen;
+    margin-bottom: 20px;
+}
+
+.spectrumLgV60 {
+    background: linear-gradient( to left, rgb(190, 139, 28), transparent);
+    background-blend-mode: screen;
+    margin-bottom: 20px;
+}
+
+.spectrum1 {
+    background: linear-gradient(to top left, red, transparent), linear-gradient(to top right, green, transparent), linear-gradient(to bottom left, black, transparent), linear-gradient(to bottom right, blue, transparent);
+    background-blend-mode: screen;
+}
+
+
+
+/* general specs phone*/
+
+.iconspace1{
+    margin-right:20%;
+}
+.iconspace2 {
+    margin-left: 17%;
+}
+.iconspace3 {
+    margin-left: 16%;
+}
+.iconspace3 {
+    margin-left: 16%;
+}
+
+.pagesbutton1 {
+    color:white;
+    margin-left:49%;
+    margin-top:2%;
+    font-size:25px;
+}
+.pagesbutton2 {
+    color: white;
+    margin-left: 8%;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+
+/* //general specs phone*/
+
+
+
+
+
+/* //Phones pages*/
+
+
+

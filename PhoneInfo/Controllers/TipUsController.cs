@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationLogic.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PhoneInfo.ApplicationLogic.Abstractions;
@@ -12,16 +13,16 @@ namespace PhoneInfo.Controllers
     public class TipUsController : Controller
     {
         private readonly PhoneInfoDBContext _context;
-        private readonly ITipUs _tipusService;
+        private readonly TipUsService _tipusService;
 
         Guid tipUsId;
         DateTime date;
 
 
-        public TipUsController(ITipUs tipusService, PhoneInfoDBContext context)
+        public TipUsController(PhoneInfoDBContext context, TipUsService tipusService)
         {
-            _tipusService = tipusService;
             _context = context;
+            _tipusService = tipusService;
         }
 
         [HttpGet]
